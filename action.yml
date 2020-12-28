@@ -1,5 +1,12 @@
  name: "Arduino builder"
  description: "Build your arduino files"
+ author: "dark0ghost"
+ inputs:
+   file:
+     description: "file compile"
+     required: true
+
+
  runs:
    using: 'docker'
    image: 'Dockerfile'
