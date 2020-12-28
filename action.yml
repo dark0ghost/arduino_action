@@ -1,0 +1,7 @@
+ name: "Arduino builder"
+ description: "Build your arduino files"
+ runs:
+   using: 'docker'
+   image: 'Dockerfile'
+   args:
+     - ${{ inputs.file }}
