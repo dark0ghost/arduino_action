@@ -1,6 +1,11 @@
 #!/bin/sh -l
-if success ; then
-  # shellcheck disable=SC2154
-  echo "Build field with code $failure"
-  exit 1
+
+# shellcheck disable=SC2034
+# shellcheck disable=SC1073
+if "$2" != "1"; then
+  arduino-cli  core update-index --additional-urls "$2"
 fi
+for i in $1; do
+  arduino-cli compile i
+done
+  exit 1
