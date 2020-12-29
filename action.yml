@@ -10,3 +10,4 @@
    image: 'Dockerfile'
    args:
      - ${{ inputs.file }}
+     - ${{inputs.link}}
