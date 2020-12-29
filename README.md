@@ -4,18 +4,16 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 ## Inputs
 
-### `who-to-greet`
+### `file`
 
-**Required** The name of the person to greet. Default `"World"`.
+path to file 
 
-## Outputs
-
-### `time`
-
-The time we greeted you.
-
+### `link`
+link to core 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+- name: Build
+  uses: dark0ghost/arduino_action@v0.1
+  with:
+      file: "arduino.uno  temp_esp.uno"
+      link: "https://arduino.esp8266.com/stable/package_esp8266com_index.json"

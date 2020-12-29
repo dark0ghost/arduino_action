@@ -5,6 +5,10 @@
    file:
      description: "file compile"
      required: true
+   link:
+       description: "link to sketch"
+       required: false
+       default: 1
  runs:
    using: 'docker'
    image: 'Dockerfile'
