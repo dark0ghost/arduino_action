@@ -1,6 +1,6 @@
 # arduino_action
 
-This action compile .uno file
+This action compile .ino file
 
 ## Inputs
 
