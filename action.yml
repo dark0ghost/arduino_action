@@ -8,7 +8,7 @@
    link:
        description: "link to sketch"
        required: false
-       default: 1
+       default: "https://arduino.esp8266.com/stable/package_esp8266com_index.json"
  runs:
    using: 'docker'
    image: 'Dockerfile'
