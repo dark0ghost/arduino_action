@@ -6,6 +6,8 @@
 if "$INPUT_LINK" != "1"; then
   arduino-cli  core update-index --additional-urls $INPUT_LINK
 fi
+# shellcheck disable=SC2164
+cd "$GITHUB_WORKSPACE"
 for i in $INPUT_FILE; do
   arduino-cli compile i
 done
