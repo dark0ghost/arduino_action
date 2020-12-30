@@ -15,6 +15,7 @@ link to core
 - name: Build
   uses: dark0ghost/arduino_action@v0.1
   with:
-      file: "arduino.uno  temp_esp.uno"
+      file: "arduino esp"
       link: "https://arduino.esp8266.com/stable/package_esp8266com_index.json"
 ```
+## **files must contain the extension .ino**

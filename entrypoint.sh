@@ -9,4 +9,4 @@ arduino-cli core install arduino:avr
 for i in $INPUT_FILE ; do
   arduino-cli compile -b arduino:avr:uno $i --verbose
 done
-exit 1
+exit 0
